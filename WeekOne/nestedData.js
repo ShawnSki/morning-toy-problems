@@ -24,19 +24,24 @@ const composer = {
   // Combine the composer's first and last names, storing on
   // a variable called 'fullName'.
   
-  // CODE HERE
-  
+ let fullName = `${composer.firstName} ${composer.lastName}`;
+
   // Create a new variable called 'favoriteChild'. Let its
   // value be the child with the longest name (because
   // everyone knows the children with the longest names are
   // their parents' favorites.)
   
-  // CODE HERE
+   for (let i = 0; i < composer.children.length; i++) {
+      if (composer.children[i]) {
+        favoriteChild = composer.children[i];
+      }
+   }
+ }
   
   // Create another variable called 'mouthsToFeed' and set its value to be
   // the length of the children array.
   
-  // CODE HERE
+  let mouthsToFeed = composer.children.length;
   
   // Console log the compositions array. What is going to happen?
   
@@ -45,7 +50,7 @@ const composer = {
   // Create a variable called 'fruitless'. The value of this variable should
   // be the length of the compositions array.
   
-  // CODE HERE
+ let fruitless = 
   
   // Invoke the 'compose' function on our composer object. The function has
   // a parameter of 'piece'. Give the compose function an argument of
@@ -54,7 +59,8 @@ const composer = {
   // updated compositions array. Save the returned value to a variable
   // called 'prolific'.
   
-  // CODE HERE
+  composers.compose("Twinkle Twinkle Little Star");
+  let prolific = compositions[];
   
   /* Don't change below this line */
   const composers = [
@@ -133,11 +139,11 @@ const composer = {
   
   // Access Beethoven's country
   
-  // CODE HERE
+  composers[0].country;
   
   // Access 'Harry Potter' from John William's list of compositions
   
-  // CODE HERE
+  composers[2].compositions[2];
   
   // Neal Hefti composed using math. Here's his composition:
   /* Don't change below this line */
@@ -147,7 +153,7 @@ const composer = {
   }
   song.push(' batman!');
   song = song.join('');
-  console.clear();
+  // console.clear();
   /* Don't change above this line */
   
   // Invoke Neal Hefti's 'compose' method passing in the 'song' variable as
